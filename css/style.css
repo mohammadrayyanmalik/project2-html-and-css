@@ -1,0 +1,151 @@
+/* CSS reset */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center ;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+
+/* navigation bar: logo and images */
+#Logo{
+        
+        margin: 0px 45px;
+
+}
+
+#logo img{
+    margin: 10px 20px;
+    height: 56px;
+}
+/* navigation bar ul styling */
+#navbar ul{
+    display: flex;
+    font-family: "Baloo 2", sans-serif;
+}
+
+
+
+
+#navbar ul  li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+#navbar ul  li a{
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul  li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* Home section  */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 390px;
+}
+
+#home::before
+{
+    content: "";
+    background:url(/img/fish-8031138_1920.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+}
+#home h1{
+    color: rgba(240, 241, 129, 0.986);
+    text-align: center;
+    font-family:'Bree Serif', serif;
+}
+
+#home p{
+    font-size: 1.2rem;
+    color: rgba(240, 241, 129, 0.986);
+    text-align: center;
+    font-family:'Bree Serif', serif;
+    ;
+}
+.btn
+{
+    padding: 6px 20px ;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(235, 107, 33, 0.87);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+/* services section */
+#Services{
+    display: flex;
+    margin: 34px;
+
+}
+#Services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+
+
+}
+#Services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+
+}
+
+
+
+/* UTILITY CLASSES  */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondry{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
